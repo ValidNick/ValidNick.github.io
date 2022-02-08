@@ -1,6 +1,4 @@
-<!doctype html>
-<title>Example</title>
-<style>
+
   * {
    box-sizing: border-box; 
   }
@@ -29,13 +27,4 @@
     background: yellowgreen;
     height: 20vh;
   }
-</style>
-<body>
-  <header>Header</header>
-  <div id="main">
-    <article>Article</article>
-    <nav>Nav</nav>
-    <aside>Aside</aside>
-  </div>
-  <footer>Footer</footer>
-</body>
+
