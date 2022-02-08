@@ -1,119 +1,41 @@
-
-/* CSS for The Fixed Navigation Bar */
-
-.navbar {
-  overflow: hidden;
-  background-color: #4267B2;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.navbar a {
-  
-  display:inline-block;
-  color:  #4267B2;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 25px;
- 
-}
-
-.navbar a:hover {
-  background: white;
-  color:  #4267B2;
-}
-
-
-/* Text Align for Below the Nav Bar */
-
-.main {
-  margin-top: 30px;
-  text-align: center;
-  font-family: cursive;
-}
-
-/* Profile Image Adj. */
-
-.firstimg{
-    padding:0px;
-    border-radius: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    padding: 70px;
-
-}
-
-
-/* Now to style the list such as the fonts, color and placement */
-
-/* Tag Selectors */
-
-h1 {
-    color:  #4267B2;
-    font-size:50px;
-}
-
-h2 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    color:  #4267B2;
-    font-size: 40px;
-}
-
-p {
-    font-size:30px;
-}
-
-ul {
-    font-size:25px;
-}
-
-a:visited {
-  color:  purple;
-}
-
-
-/* Class Selectos */
-
-
-.center {
-    padding-top: 40px;
-  padding-right: 100px;
-  padding-bottom: 40px;
-  padding-left: 100px;
-}
-
-.p4{
-   font-family: 'Source Serif Pro', serif; 
-}
-
-.p2{
-    font-family: 'Georama', sans-serif;
-}
-
-.p3{
-    font-family: 'Fjalla One', sans-serif;
-}
-
-.generalfont {
-    font-family: 'PT Sans Narrow', sans-serif;
-}
-
-
-/* Image Adj. */
-
-.img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: 10%;
-}
-
- h1:hover, h2:hover {
-  background-color:  #4267B2;
-  color: white;   
-}
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+   box-sizing: border-box; 
+  }
+  body {
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+  }
+  #main > article {
+    flex: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+    background: beige;
+  }
+  #main > nav {
+    order: -1;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+</style>
+<body>
+  <header>Header</header>
+  <div id="main">
+    <article>Article</article>
+    <nav>Nav</nav>
+    <aside>Aside</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
