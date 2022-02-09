@@ -57,6 +57,66 @@ body {
   transform: scale(1.03);
 }
 
+.projects section {
+  background: rgb(20, 20, 20);
+}
+
+
+.section_title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 1vh 0px;
+  padding: 0px 1px;
+  word-wrap: break-word;
+}
+
+.about_section {
+  font-size: 18px;
+  font-family: "Questrial", sans-serif;
+  margin: 2vh 0px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.bottom_section {
+  margin: 1vh 0px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.bottom_section span {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.bottom_section span i {
+  font-size: 15px;
+}
+
+
+
+
+
+
+#about a:hover,
+#username a:hover {
+  text-decoration: underline;
+}
+
+#about span {
+  margin: 1vh 0px;
+  display: block;
+}
+
+#about span i {
+  font-size: 16px;
+}
+
+#work {
+  margin: 2vh 0px;
+  padding: 4vh 0px !important;
+}
+
 @media (max-width: 800px) {
   :root {
     --background-image: linear-gradient(
