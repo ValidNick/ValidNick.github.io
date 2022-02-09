@@ -1,5 +1,28 @@
-.main {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.header,
+.footer {
+  background-color: #999;
 }
 
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
