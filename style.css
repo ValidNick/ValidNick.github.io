@@ -3,7 +3,10 @@ body {
  text-color: #fff;
 }
 
-
+.emoji {
+  width: 18px;
+  height: 18px;
+}
 
 .main {
    display: grid;
