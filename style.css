@@ -135,3 +135,274 @@ body {
   left: 0;
 }
 
+#footer {
+  width: 100%;
+  padding: 8vh 0px;
+  text-align: center;
+}
+
+#footer a {
+  color: var(--text-color) !important;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  font-weight: bold;
+}
+
+#profile_img {
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  min-height: 180px;
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 5px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+#profile div {
+  font-weight: bold;
+  margin: 1.5vh 0px;
+}
+
+#username {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#username span {
+  font-size: 24px;
+}
+
+#userbio {
+  font-size: 26px;
+  font-family: "Questrial", sans-serif;
+  width: 100%;
+}
+
+#about {
+  font-size: 18px;
+  font-family: "Questrial", sans-serif;
+}
+
+#about a,
+#username a {
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#about a:hover,
+#username a:hover {
+  text-decoration: underline;
+}
+
+#about span {
+  margin: 1vh 0px;
+  display: block;
+}
+
+#about span i {
+  font-size: 16px;
+}
+
+#work {
+  margin: 2vh 0px;
+  padding: 4vh 0px !important;
+}
+
+
+.projects {
+  margin-left: -15px;
+  /* align section w/ heading above */
+}
+
+.projects a {
+  /* 30px is the gutter size in magic grid */
+  width: calc(49% - 30px);
+  /* 49% avoids a weird single column on some wide screens */
+  display: flex;
+  text-decoration: none;
+}
+
+.projects section {
+  width: 100%;
+  padding: 2.5vh 5%;
+  margin: 1vh 0px;
+  display: inline-block;
+  border-radius: 5px;
+  color: var(--text-color);
+  border: 1px solid rgb(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 0px rgb(0, 0, 0, 0);
+  transition: 0.4s ease-in-out;
+  transform: scale(1);
+}
+
+.projects section:hover {
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0, 0);
+  box-shadow: 0px 15px 35px rgb(0, 0, 0, 0.06);
+  transform: scale(1.03);
+}
+
+.section_title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 1vh 0px;
+  padding: 0px 1px;
+  word-wrap: break-word;
+}
+
+.about_section {
+  font-size: 18px;
+  font-family: "Questrial", sans-serif;
+  margin: 2vh 0px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.bottom_section {
+  margin: 1vh 0px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.bottom_section span {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.bottom_section span i {
+  font-size: 15px;
+}
+
+.socials {
+  color: #fff;
+  text-decoration: none;
+  margin: 3vh 0px !important;
+}
+
+.socials span {
+  display: inline-block !important;
+  margin-right: 2vw !important;
+  font-weight: normal !important;
+}
+
+.socials span a {
+  font-weight: normal !important;
+}
+
+.go_back {
+  position: absolute;
+  color: var(--text-color);
+  font-size: 26px;
+  margin-left: 5vw;
+  margin-top: 4vh;
+}
+
+::selection {
+  color: var(--bg-color);
+  background: var(--text-color);
+}
+
+@media (max-width: 800px) {
+  #profile {
+    width: 90vw;
+    padding: 4vh 5vw;
+    height: 60vh;
+    text-align: center;
+    position: relative;
+  }
+
+  #display {
+    width: 90vw;
+    padding: 4vh 5vw;
+    height: auto;
+    display: inline-block;
+    padding-left: 5vw;
+  }
+
+  #profile_img {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    margin: 0px auto !important;
+  }
+
+  #work {
+    margin: 0px;
+  }
+
+  .projects {
+    margin-left: 0;
+    /* remove neg margin to align w/ header */
+  }
+
+  .projects a {
+    width: 100%;
+  }
+
+  .projects section {
+    width: 88%;
+  }
+
+ #profile_blog {
+    width: 90vw;
+    margin: 0px 5vw;
+    margin-top: 36vh;
+    text-align: left;
+    z-index: 1;
+  }
+
+  #profile_img_blog {
+    width: 65px;
+    height: 65px;
+  }
+
+  .go_back {
+    position: relative;
+    color: var(--text-color);
+    font-size: 26px;
+    margin-left: 5vw;
+    top: 5vh;
+  }
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+}
+:root {
+  --bg-color: rgb(10, 10, 10);
+  --text-color: #fff;
+  --blog-gray-color: rgb(180, 180, 180);
+  --background-image: linear-gradient(
+      90deg,
+      rgba(10, 10, 10, 0.3),
+      rgb(10, 10, 10, 1)
+    ),
+    url("https://images.unsplash.com/photo-1562683855-f85c2a6446b6?w=1701&q=80");
+  --background-background: linear-gradient(
+      0deg,
+      rgba(10, 10, 10, 1),
+      rgba(10, 10, 10, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1562683855-f85c2a6446b6?w=1701&q=80") center center fixed;
+  --height: 50vh;
+}
+
+#display h1 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #fff;
+}
